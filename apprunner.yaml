@@ -6,6 +6,6 @@ build:
       - pip install -r requirements.txt
 run:
   runtime-version: 3.9
-  command: gunicorn --bind 0.0.0.0:8080 app:app
+  command: python app.py
   network:
     port: 8080
